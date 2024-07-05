@@ -6,3 +6,5 @@
 # https://maindenis.github.io/metafarm/List_auctions.html
 # https://maindenis.github.io/metafarm/Main.html
 # https://maindenis.github.io/metafarm/Main_auction.html
+# https://maindenis.github.io/metafarm/Main_2.html
+# https://maindenis.github.io/metafarm/Uo_1.html
