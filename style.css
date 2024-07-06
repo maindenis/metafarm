@@ -223,22 +223,6 @@ h1 {
     color: #000;
 }
 
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p {
-
-}
-
 a {
     text-decoration: none;
 }
@@ -262,22 +246,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -287,7 +255,6 @@ textarea:focus {
     max-width: 767px;
     padding: 0 15px;
     margin: 0 auto;
-/*    padding: 0 40px;*/
 }
 
 .overflow_wrapp {
@@ -932,10 +899,6 @@ textarea:focus {
     color: #000;
 }
 
-.item_vals {
-
-}
-
 .item_vals p {
     font-weight: 274;
     font-size: 26px;
@@ -1199,10 +1162,6 @@ textarea:focus {
     color: #000;
 }
 
-.info_box ul {
-
-}
-
 .info_box ul li {
     margin: 18px 0;
     padding-left: 30px;
@@ -1464,16 +1423,8 @@ textarea:focus {
     padding: 58px 0 120px 0;
 }
 
-.items_2 {
-
-}
-
-.items_2_tile {
-
-}
-
 .items_2_tile h3 {
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: 200;
     font-size: 30px;
     line-height: 36px;
@@ -1561,20 +1512,12 @@ textarea:focus {
 
 /*-- Section 1 - Main_2 --*/
 
-.boost_header {
-
-}
-
 .boost_header h4 {
     padding: 15px 0 9px;
     font-weight: 200;
     font-size: 35px;
     line-height: 42px;
     color: #FFF;
-}
-
-.tables_items {
-
 }
 
 .tables_items_header {
@@ -1751,10 +1694,6 @@ textarea:focus {
 
 .thumb > div:nth-child(2) {
     width: calc(100% - 110px);
-}
-
-.thumb {
-
 }
 
 .thumb h3 {
@@ -2035,7 +1974,6 @@ body.fixed {
 
 .modal {
     width: 100%;
-/*    max-width: 647px;*/
     background: #5F4282;
     border: 1px solid #000;
     border-radius: 20px;
@@ -2101,18 +2039,6 @@ body.fixed {
 .modal_img_box_2 {
     max-width: 601px;
     height: 600px;
-}
-
-.modal_title {
-
-}
-
-.modal_title h3 {
-
-}
-
-.modal_title p {
-
 }
 
 .maodals_two_cols {
