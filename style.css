@@ -285,8 +285,9 @@ textarea:focus {
 .row {
     width: 100%;
     max-width: 767px;
+    padding: 0 15px;
     margin: 0 auto;
-    padding: 0 40px;
+/*    padding: 0 40px;*/
 }
 
 .overflow_wrapp {
@@ -314,8 +315,14 @@ textarea:focus {
     padding: 31px 0 14px 0;
 }
 
+.header_site > .row {
+    max-width: 720px;
+}
+
 .header_templ {
     display: flex;
+    max-width: 695px;
+    margin: 0 auto;
 }
 
 .header_templ > div:nth-child(1) {
@@ -799,6 +806,7 @@ textarea:focus {
 }
 
 .d_count {
+    padding-bottom: 103px;
     text-align: center;
     font-size: 35px;
     line-height: 42px;
@@ -1088,6 +1096,7 @@ textarea:focus {
 
 .b_footer {
     display: flex;
+    margin: 0 -15px -23px -15px;
 }
 
 .b_footer > div:nth-child(1) {
@@ -1852,8 +1861,108 @@ textarea:focus {
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
 
-footer {
+.content {
+    padding-bottom: 180px;
+}
 
+footer {
+    background: #F0E9E4;
+}
+
+.footer_section {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 22px 0 29px 0;
+}
+
+.footer_btns_wrapp {
+    width: 725px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_btns_wrapp:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 27px;
+    background: #BFB7AC;
+    border: 2px solid #000;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    top: -15px;
+    left: -2px;
+}
+
+.footer_btns {
+    display: flex;
+    height: 105px;
+    background: #9E9A95;
+    border: 2px solid #000;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+    margin: 0 -2px;
+    padding: 0 2px;
+}
+
+.footer_btns > div {
+    padding: 2px;
+}
+
+.footer_pill_wrapp {
+    height: 137px;
+    overflow-y: hidden;
+    position: relative;
+    top: -38px;
+}
+
+.footer_btns > div:nth-child(1) {
+    border-radius: 0 0 0 12px;
+}
+
+.f_pill {
+    display: inline-block;
+    vertical-align: top;
+    height: 140px;
+    position: relative;
+}
+
+.f_pill.active {
+    top: 24px;
+}
+
+.f_pill_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px 10px 25px;
+}
+
+.f_pill_icon {
+    position: relative;
+    height: 63px;
+}
+
+.f_pill_icon svg {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translate(0 ,-50%);
+}
+
+.f_pill_content p {
+    font-weight: 200;
+    font-size: 27px;
+    line-height: 32px;
+    color: #000;
 }
 
 /*-- Popups --*/
