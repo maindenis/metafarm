@@ -1844,6 +1844,150 @@ textarea:focus {
 
 /*-- /Section 1 - Up 1 --*/
 
+/*-- Section 1 - F 1 --*/
+
+.content {
+    position: relative;
+}
+
+.modal_sect {
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    padding: 171px 0 150px 0;
+}
+
+.modal_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    width: 100%;
+    max-width: 647px;
+    background: #5F4282;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 10px 25px 10px 25px;
+}
+
+.modal_img_box {
+    max-width: 321px;
+    height: 320px;
+    background: #5F4282;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 10px auto 30px auto;
+}
+
+.modal_title {
+    text-align: center;
+}
+
+.modal_title h3 {
+    padding: 10px 0;
+    font-weight: 510;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFF;
+}
+
+.modal_title p {
+    padding: 10px 0;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 40px;
+    color: #FFF;
+}
+
+.modals_pills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding: 47px 0 9px 0;
+    justify-content: center;
+}
+
+.modals_pills > div {
+    padding: 10px;
+}
+
+/*-- /Section 1 - F 1 --*/
+
+/*-- Section 1 - F 5 --*/
+
+.modal_sect_2 {
+    padding: 20px 0 20px 0;
+}
+
+.modal_2 {
+    max-width: 727px;
+    padding: 30px 60px 30px 60px;
+}
+
+.modal_img_box_2 {
+    max-width: 601px;
+    height: 600px;
+}
+
+.modal_title {
+
+}
+
+.modal_title h3 {
+
+}
+
+.modal_title p {
+
+}
+
+.maodals_two_cols {
+    display: flex;
+    padding: 94px 0 10px 0;
+}
+
+.maodals_two_cols > div:nth-child(1) {
+    width: 140px;
+}
+
+.maodals_two_cols > div:nth-child(2) {
+    width: calc(100% - 140px);
+}
+
+.modals_pills_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.blue_pill_ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 127px;
+    height: 127px;
+    background: #7777D4;
+    border: 1px solid #000;
+    box-shadow: 0 10px 0 rgba(0, 0, 0, .12);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 55px;
+    color: #FFF;
+}
+
+
+
+/*-- /Section 1 - F 5 --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
