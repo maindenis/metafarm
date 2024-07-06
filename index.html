@@ -14,7 +14,7 @@
 	    var oldViewport = document.querySelector('meta[name="viewport"]');
 	    var viewport = document.createElement('meta');
 	    viewport.setAttribute('name', 'viewport');
-	    viewport.setAttribute('content', 'width=' + (width <= 768 ? '768' : 'device-width'));
+	    viewport.setAttribute('content', 'width=' + (width <= 480 ? '480' : 'device-width'));
 	    document.head.replaceChild(viewport, oldViewport);
 	})();
 	</script>
