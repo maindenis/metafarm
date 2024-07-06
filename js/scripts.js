@@ -1,3 +1,5 @@
+var $ = window.jQuery;
+
 $(document).ready(function() {
     const swiper = new Swiper('.slider', {
         loop: true,
