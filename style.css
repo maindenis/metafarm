@@ -252,7 +252,7 @@ a:active {
 
 .row {
     width: 100%;
-    max-width: 767px;
+    width: 767px;
     padding: 0 15px;
     margin: 0 auto;
 }
