@@ -12,10 +12,6 @@ $(document).ready(function() {
         {
             enabled: true,
             onlyInViewport: false,
-        },
-        mousewheel: 
-        {
-            invert: true,
         }
     });
 
