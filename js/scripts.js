@@ -1,4 +1,5 @@
-var $ = window.jQuery;
+$.noConflict();
+jQuery(document).ready(function($){
 
 $(document).ready(function() {
     const swiper = new Swiper('.slider', {
@@ -79,5 +80,7 @@ $(document).ready(function() {
         }
       }
     });
+
+});
 
 });
