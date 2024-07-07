@@ -13,11 +13,7 @@ $(document).ready(function() {
         {
             enabled: true,
             onlyInViewport: false,
-        },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true,
-        },
+        }
     });
 
     // -----------
