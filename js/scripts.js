@@ -14,7 +14,10 @@ $(document).ready(function() {
             enabled: true,
             onlyInViewport: false,
         },
-        noSwiping: false,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
     });
 
     // -----------
