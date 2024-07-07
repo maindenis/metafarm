@@ -13,7 +13,8 @@ $(document).ready(function() {
         {
             enabled: true,
             onlyInViewport: false,
-        }
+        },
+        noSwiping: false,
     });
 
     // -----------
