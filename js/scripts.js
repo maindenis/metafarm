@@ -6,6 +6,11 @@ $(document).ready(function() {
         navigation: {
             nextEl: '.slide_next',
             prevEl: '.slide_prev',
+        },
+        keyboard: 
+        {
+            enabled: true,
+            onlyInViewport: false,
         }
     });
 
