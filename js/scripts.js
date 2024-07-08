@@ -1,7 +1,23 @@
 $.noConflict();
 jQuery(document).ready(function($){
-
+function getScreenHeight() {
+    topCoord = $("#topCoord").offset().top
+    screenHeight = $(window).height() - topCoord - parseInt($(".content").css("padding-bottom")) - parseInt($("section").css("padding-top"));
+    $(".screen_height").css({
+        "min-height" : "auto"
+    });
+    $(".screen_height").css({
+        "min-height" : screenHeight + "px"
+    });
+}
+$(window).resize(function() {
+    getScreenHeight();
+});
+$(document).scroll(function() {
+    getScreenHeight();
+});
 $(document).ready(function() {
+    getScreenHeight();
     const swiper = new Swiper('.slider', {
         loop: true,
         direction: 'horizontal',
@@ -83,8 +99,8 @@ $(document).ready(function() {
     });
 
     // ---------
-    if($('.marquee').length > 0) {
-        $('.marquee').marquee({
+    if($('.marque').length > 0 && $('.marque .js-marquee-wrapper').length == 0) {
+        $('.marque').marquee({
             duration: 20000,
             startVisible: true,
             duplicated: true
