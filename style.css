@@ -926,9 +926,15 @@ a:active {
 
 /*-- Section 1 - Main --*/
 
+.marque_wrapp {
+    height: 45px;
+    overflow: hidden;
+}
+
 .info_text {
     padding: 5px 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 .info_text p {
@@ -1806,6 +1812,7 @@ a:active {
 
 footer {
     background: #F0E9E4;
+    border-top: 1px solid #000;
 }
 
 .footer_section {
@@ -1825,10 +1832,10 @@ footer {
 .footer_btns_wrapp:before {
     display: block;
     content: "";
-    width: 100%;
+    width: calc(100% + 2px);
     height: 27px;
     background: #BFB7AC;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 12px 12px 0 0;
     position: absolute;
     top: -15px;
@@ -1839,12 +1846,12 @@ footer {
     display: flex;
     height: 105px;
     background: #9E9A95;
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 12px;
     position: relative;
     z-index: 2;
     margin: 0 -2px;
-    padding: 0 2px;
+    padding: 0 2px 0 3px;
 }
 
 .footer_btns > div {
@@ -1855,7 +1862,7 @@ footer {
     height: 137px;
     overflow-y: hidden;
     position: relative;
-    top: -38px;
+    top: -36px;
 }
 
 .footer_btns > div:nth-child(1) {
@@ -1870,7 +1877,7 @@ footer {
 }
 
 .f_pill.active {
-    top: 24px;
+    top: 23px;
 }
 
 .f_pill_content {

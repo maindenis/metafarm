@@ -82,6 +82,15 @@ $(document).ready(function() {
       }
     });
 
+    // ---------
+    if($('.marquee').length > 0) {
+        $('.marquee').marquee({
+            duration: 20000,
+            startVisible: true,
+            duplicated: true
+        });
+    }
+
 });
 
 });
