@@ -273,9 +273,21 @@ a:active {
     text-align: left;
 }
 
+.content {
+    padding-top: 267px;
+}
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
 .header_site {
     background: #F0E9E4;

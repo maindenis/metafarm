@@ -99,13 +99,13 @@ $(document).ready(function() {
     });
 
     // ---------
-    // if($('.marque').length > 0 && $('.marque .js-marquee-wrapper').length == 0) {
-    //     $('.marque').marquee({
-    //         duration: 20000,
-    //         startVisible: true,
-    //         duplicated: true
-    //     });
-    // }
+    if($('.marque').length > 0 && $('.marque .js-marquee-wrapper').length == 0) {
+        $('.marque').marquee({
+            duration: 20000,
+            startVisible: true,
+            duplicated: true
+        });
+    }
 
 });
 
