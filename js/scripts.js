@@ -1,23 +1,25 @@
 $.noConflict();
 jQuery(document).ready(function($){
-function getScreenHeight() {
-    topCoord = $("#topCoord").offset().top
-    screenHeight = $(window).height() - topCoord - parseInt($(".content").css("padding-bottom")) - parseInt($("section").css("padding-top"));
-    $(".screen_height").css({
-        "min-height" : "auto"
-    });
-    $(".screen_height").css({
-        "min-height" : screenHeight + "px"
-    });
-}
+// function getScreenHeight() {
+//     if($(".screen_height").length > 0) {
+//         topCoord = $("#topCoord").offset().top
+//         screenHeight = $(window).height() - topCoord - parseInt($(".content").css("padding-bottom")) - parseInt($("section").css("padding-top"));
+//         $(".screen_height").css({
+//             "min-height" : "auto"
+//         });
+//         $(".screen_height").css({
+//             "min-height" : screenHeight + "px"
+//         });
+//     }
+// }
 $(window).resize(function() {
-    getScreenHeight();
+    // getScreenHeight();
 });
 $(document).scroll(function() {
-    getScreenHeight();
+    // getScreenHeight();
 });
 $(document).ready(function() {
-    getScreenHeight();
+    // getScreenHeight();
     const swiper = new Swiper('.slider', {
         loop: true,
         direction: 'horizontal',

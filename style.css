@@ -252,7 +252,7 @@ a:active {
 
 .row {
     width: 100%;
-    width: 767px;
+    max-width: 767px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -479,43 +479,39 @@ a:active {
 
 .white_box_wrapp {
     position: relative;
+    left: 2px;
 }
 
 .angle_top {
-    width: 20px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    top: -2px;
-    left: -10px;
-}
-
-.angle_bottom {
-    height: 18px;
-    width: auto;
-    position: absolute;
-    bottom: 0;
-    left: -10px;
+    top: 0px;
+    left: -16px;
 }
 
 .white_box_wrapp:before {
     display: block;
     content: "";
     width: 20px;
-    height: calc(100% - 41px);
+    height: calc(100% - 17.5px);
     background: #fff;
     position: absolute;
-    top: 23px;
-    left: -10px;
-    border-left: 2px solid #000;
+    top: 16px;
+    left: -16px;
+    border-left: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+    border-radius: 0 0 0 8px;
 }
 
 .white_box {
     display: flex;
     max-width: 517px;
-    border: 2px solid #000;
+    border: 1.5px solid #000;
+    border-left: 0;
     background: #fff;
-    border-radius: 8px;
-    padding: 6px 40px 8px 11px;
+    border-radius: 0 8px 8px 0;
+    padding: 6px 40px 8px 0;
 }
 
 .white_box > div:nth-child(1) {
@@ -615,7 +611,18 @@ a:active {
     height: 16px;
     background: #D9D2CE;
     border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    position: relative;
+}
+
+.header_border:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
 }
 
 /*-------------------------------------------*/
@@ -624,8 +631,23 @@ a:active {
 
 /*-- Section 1 - 1 --*/
 
+section .row {
+    padding: 0 25px;
+}
+
+.slider_box_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 470px);
+}
+
+.slider_box_center > div {
+    width: 100%;
+}
+
 .card {
-    padding: 60px 0;
+    padding: 60px 0 30px 0;
 }
 
 .card_inner {
@@ -765,7 +787,7 @@ a:active {
 .slider_box {
     position: relative;
     max-width: 767px;
-    margin: 91px auto 59px auto;
+    margin: 20px auto 0 auto;
 }
 
 .slide_prev {
@@ -938,6 +960,10 @@ a:active {
 
 /*-- Section 1 - Main --*/
 
+.top_box {
+    min-height: 196px;
+}
+
 .marque_wrapp {
     height: 45px;
     overflow: hidden;
@@ -991,8 +1017,7 @@ a:active {
 }
 
 .berrie_val_header {
-/*    padding: 100px 0 30px 0;*/
-    padding: 20px 0 30px 0;
+    padding: 13px 0 30px 0;
 }
 
 .c_val {
@@ -1010,6 +1035,10 @@ a:active {
     font-size: 80px;
     line-height: 95px;
     color: #FFF;
+}
+
+.percents_thumbs_wrapp {
+    min-height: 73px;
 }
 
 .percents_thumbs {
@@ -1107,7 +1136,11 @@ a:active {
     display: block;
     width: auto;
     height: auto;
-    margin: 0 auto;
+    margin: 32px auto;
+}
+
+.b_footer_wrapp {
+    min-height: 110px;
 }
 
 .b_footer {
@@ -1127,7 +1160,7 @@ a:active {
 }
 
 .flash {
-    display: flex;
+    display: inline-flex;
     min-height: 90px;
 }
 
@@ -1144,7 +1177,7 @@ a:active {
 }
 
 .boost {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: flex-end;
 }
