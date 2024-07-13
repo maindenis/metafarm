@@ -462,6 +462,69 @@ a:active {
     z-index: 2;
 }
 
+/*-- Steps 2 --*/
+
+.steps_wrapp_2 {
+    height: 70px;
+    margin: 27px 0 18px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.steps_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #F0E9E4;
+    border: 1px solid #000;
+    height: 20px;
+    border-radius: 12px;
+}
+
+.step_2 {
+    height: 59px;
+    position: relative;
+    top: -41px;
+}
+
+.step_2 p {
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFF;
+    border: 1px solid #000;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+}
+
+.step_2 p:before {
+    display: block;
+    content: "";
+    height: 27px;
+    width: 1px;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - .5px);
+    z-index: 2;
+}
+
+.line {
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    left: 9px;
+    height: 10px;
+    border-radius: 6px;
+}
+
+/*-- /Steps 2 --*/
+
 .header_two_cols {
     display: flex;
 }
@@ -505,16 +568,20 @@ a:active {
 }
 
 .white_box {
-    display: flex;
-    max-width: 517px;
+    display: inline-flex;
     border: 1.5px solid #000;
     border-left: 0;
     background: #fff;
     border-radius: 0 8px 8px 0;
-    padding: 6px 40px 8px 0;
+    padding: 6px 40px 8px 13px;
 }
 
-.white_box > div:nth-child(1) {
+.white_box > div {
+    padding: 0 15px;
+    position: relative;
+}
+
+/*.white_box > div:nth-child(1) {
     padding-right: 50px;
     position: relative;
     z-index: 2;
@@ -539,7 +606,7 @@ a:active {
 
 .white_box > div:nth-child(2) {
     width: calc(100% - 103px);
-}
+}*/
 
 .white_box p {
     font-weight: 200;
@@ -548,7 +615,31 @@ a:active {
     color: #000;
 }
 
-.breadcrumbs {
+.white_box > div .circle {
+    position: absolute;
+    top: 8px;
+    left: -5px;
+}
+
+.circle {
+    background: #FFF;
+    border: 1px solid #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.orange {
+    border: 1px solid #FFAC53;
+    background: #FFAC53;
+}
+
+.red {
+    border: 1px solid #E94B4B;
+    background: #E94B4B;
+}
+
+/*.breadcrumbs {
     display: flex;
     margin: 0 -25px;
     position: relative;
@@ -605,7 +696,7 @@ a:active {
     font-size: 20px;
     line-height: 24px;
     color: #000;
-}
+}*/
 
 .header_border {
     height: 16px;
@@ -1290,10 +1381,6 @@ section .row {
     font-size: 26px;
     line-height: 31px;
     color: #FFF;
-}
-
-.info_btn svg {
-
 }
 
 /*-- /Section 1 - Info --*/

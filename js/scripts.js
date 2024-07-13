@@ -12,14 +12,28 @@ function getScreenHeight() {
         });
     }
 }
+function getLineParams() {
+    $(".line").css({
+        "width" : "auto"
+    });
+    leftCoord = $(".step_2:eq(0)").offset().left;
+    rightCoord = $(".step_2:eq(1)").offset().left;
+    lineWidth = rightCoord - leftCoord + 17;
+    $(".line").css({
+        "width" : lineWidth  + "px"
+    });
+}
 $(window).resize(function() {
     getScreenHeight();
+    getLineParams();
 });
 $(document).scroll(function() {
     getScreenHeight();
+    getLineParams();
 });
 $(document).ready(function() {
     getScreenHeight();
+    getLineParams();
     const swiper = new Swiper('.slider', {
         loop: true,
         direction: 'horizontal',
