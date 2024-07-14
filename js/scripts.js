@@ -24,12 +24,10 @@ function getLineParams() {
     });
 }
 function getRespParams() {
-    boostCoord = $("#boostCoord").offset().top + $("#boostCoord").height() + 25;
+    boostCoord = $("#boostCoord").offset().top + $("#boostCoord").outerHeight(true) + 25;
     footerCoord = $(".footer_section").offset().top;
     if(boostCoord >= footerCoord) {
         $("body").addClass("resp");
-    } else {
-        $("body").removeClass("resp");
     }
 }
 $(window).resize(function() {
@@ -42,10 +40,12 @@ $(document).scroll(function() {
     getLineParams();
     getRespParams();
 });
+$(window).on('load', function(){
+    getRespParams();
+});
 $(document).ready(function() {
     getScreenHeight();
-    getLineParams();
-    getRespParams();
+    getLineParams();    
     const swiper = new Swiper('.slider', {
         loop: true,
         direction: 'horizontal',
