@@ -23,17 +23,29 @@ function getLineParams() {
         "width" : lineWidth  + "px"
     });
 }
+function getRespParams() {
+    boostCoord = $("#boostCoord").offset().top + $("#boostCoord").height() + 25;
+    footerCoord = $(".footer_section").offset().top;
+    if(boostCoord >= footerCoord) {
+        $("body").addClass("resp");
+    } else {
+        $("body").removeClass("resp");
+    }
+}
 $(window).resize(function() {
     getScreenHeight();
     getLineParams();
+    getRespParams();
 });
 $(document).scroll(function() {
     getScreenHeight();
     getLineParams();
+    getRespParams();
 });
 $(document).ready(function() {
     getScreenHeight();
     getLineParams();
+    getRespParams();
     const swiper = new Swiper('.slider', {
         loop: true,
         direction: 'horizontal',
