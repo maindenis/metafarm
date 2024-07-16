@@ -274,7 +274,7 @@ a:active {
 }
 
 .content {
-    padding-top: 161px;
+    padding-top: 215px;
 }
 
 /*-------------------------------------------*/
@@ -531,7 +531,7 @@ a:active {
 
 .header_two_cols > div:nth-child(1) {
     width: calc(100% - 135px);
-    padding-left: 12px;
+/*    padding-left: 12px;*/
 }
 
 .header_two_cols > div:nth-child(2) {
@@ -543,17 +543,20 @@ a:active {
 .white_box_wrapp {
     position: relative;
     left: 2px;
+    width: 446px;
+    height: 45px;
+    background-image: url(img/white_box_bg.svg);
 }
 
 .angle_top {
     width: 16px;
     height: 16px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -16px;
 }
 
-.white_box_wrapp:before {
+/*.white_box_wrapp:before {
     display: block;
     content: "";
     width: 20px;
@@ -565,15 +568,15 @@ a:active {
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 0 8px;
-}
+}*/
 
 .white_box {
     display: inline-flex;
-    border: 1px solid #000;
-    border-left: 0;
-    background: #fff;
-    border-radius: 0 8px 8px 0;
-    padding: 6px 40px 8px 13px;
+/*    border: 1px solid #000;*/
+/*    border-left: 0;*/
+/*    background: #fff;*/
+/*    border-radius: 0 8px 8px 0;*/
+    padding: 10px 10px 8px 32px;
 }
 
 .white_box > div {
@@ -615,7 +618,7 @@ a:active {
 .header_border {
     height: 16px;
     background: #D9D2CE;
-    border-top: 2px solid #000;
+    border-top: 1px solid #000;
     position: relative;
 }
 
@@ -623,7 +626,7 @@ a:active {
     display: block;
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1px;
     background: #000;
     position: absolute;
     left: -1px;
@@ -1234,10 +1237,14 @@ section .row {
 }
 
 .info_box ul li .green {
+    background: transparent;
+    border: none;
     color: #73BA00;
 }
 
 .info_box ul li .red {
+    background: transparent;
+    border: none;
     color: #E94B4B;
 }
 
@@ -2254,7 +2261,7 @@ body.fixed {
 }
 
 .resp .ref_title {
-    padding: 15px 0 15px 0;
+    padding: 48px 0 15px 0;
 }
 
 .resp .thumb {
