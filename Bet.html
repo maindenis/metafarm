@@ -16,50 +16,32 @@
 	<header id="header">
 		<div class="header_site">
 			<div class="row">
-				<div class="header_templ">
-					<div>
-						<button type="button" class="close_btn">
-							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2 2L26.08 26.08" stroke="black" stroke-width="2.05" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M26.08 2L2 26.08" stroke="black" stroke-width="2.05" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-						</button>
-					</div>
-					<div>
-						<h1>Doodies_inc</h1>
-					</div>
-					<div>
-						<button type="button" class="dots">
-							<svg width="7" height="32" viewBox="0 0 7 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M3.36999 6.73001C5.0876 6.73001 6.47998 5.33762 6.47998 3.62001C6.47998 1.9024 5.0876 0.51001 3.36999 0.51001C1.65239 0.51001 0.26001 1.9024 0.26001 3.62001C0.26001 5.33762 1.65239 6.73001 3.36999 6.73001Z" fill="black"/>
-								<path d="M3.36999 19.31C5.0876 19.31 6.47998 17.9176 6.47998 16.2C6.47998 14.4824 5.0876 13.09 3.36999 13.09C1.65239 13.09 0.26001 14.4824 0.26001 16.2C0.26001 17.9176 1.65239 19.31 3.36999 19.31Z" fill="black"/>
-								<path d="M3.36999 31.9C5.0876 31.9 6.47998 30.5076 6.47998 28.79C6.47998 27.0724 5.0876 25.68 3.36999 25.68C1.65239 25.68 0.26001 27.0724 0.26001 28.79C0.26001 30.5076 1.65239 31.9 3.36999 31.9Z" fill="black"/>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div class="steps_wrapp">
-					<div class="steps">
-						<div class="step">
-							<p>1</p>	
+				<div class="steps_wrapp_2">
+					<div class="steps_2">
+						<div class="step_2">
+							<p>1</p>
+							<div class="line" style="background: #E94B4B"></div>
 						</div>
-						<div class="step">
-							<p>2</p>	
+						<div class="step_2">
+							<p>2</p>
+							<div class="line" style="background: #FFAC53"></div>
 						</div>
-						<div class="step">
-							<p>3</p>	
+						<div class="step_2">
+							<p>3</p>
 						</div>
-						<div class="step">
-							<p>4</p>	
+						<div class="step_2">
+							<p>4</p>
+							<div class="line" style="background: #FFAC53"></div>
 						</div>
-						<div class="step">
-							<p>5</p>	
+						<div class="step_2">
+							<p>5</p>
 						</div>
-						<div class="step prevlast">
-							<p>6</p>	
+						<div class="step_2">
+							<p>6</p>
+							<div class="line" style="background: #E94B4B"></div>
 						</div>
-						<div class="step">
-							<p>7</p>	
+						<div class="step_2">
+							<p>7</p>
 						</div>
 					</div>
 				</div>
@@ -69,14 +51,16 @@
 							<img class="angle_top" src="img/angle.svg" alt="" />
 							<div class="white_box">
 								<div>
-									<p>farm</p>
+									<div class="circle"></div>
+									<p>day of the week</p>
 								</div>
 								<div>
-									<ul class="breadcrumbs">
-										<li><a href="#">opening</a></li>
-										<li><a href="#">weekly auction window</a></li>
-										<li><a href="#">lose</a></li>
-									</ul>
+									<div class="circle orange"></div>
+									<p>auction</p>
+								</div>
+								<div>
+									<div class="circle red"></div>
+									<p>big auction</p>
 								</div>
 							</div>
 						</div>
@@ -94,34 +78,36 @@
 	<div class="content">
 	<!-- Section 1 - Bet -->
 	<section>
-		<div class="row">
-			<div class="bet_h3">
-				<h3>Ваша ставка</h3>
-			</div>
-			<div class="bet_val">
-				<p>260.795k</p>
-			</div>
-			<div class="pill_wrapp">
-				<div>
-					<a href="#" class="bet_pill blue_pill">max bet</a>
+		<div class="row" id="topCoord">
+			<div class="screen_height">
+				<div class="bet_h3">
+					<h3>Ваша ставка</h3>
 				</div>
-				<div>
-					<a href="#" class="bet_pill blue_pill">-10%</a>
+				<div class="bet_val">
+					<p>260.795k</p>
 				</div>
-				<div>
-					<a href="#" class="bet_pill yellow_pill">+10%</a>
-				</div>
-				<div>
-					<a href="#" class="bet_pill blue_pill">-50%</a>
-				</div>
-				<div>
-					<a href="#" class="bet_pill yellow_pill">+50%</a>
-				</div>
-				<div>
-					<a href="#" class="bet_pill red_pill">reset</a>
-				</div>
-				<div>
-					<a href="#" class="bet_pill green_pill">ok</a>
+				<div class="pill_wrapp">
+					<div>
+						<a href="#" class="bet_pill blue_pill">max bet</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill blue_pill">-10%</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill yellow_pill">+10%</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill blue_pill">-50%</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill yellow_pill">+50%</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill red_pill">reset</a>
+					</div>
+					<div>
+						<a href="#" class="bet_pill green_pill">ok</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -131,7 +117,7 @@
 	<!-- /Content -->
 	<!-- Footer -->
 	<footer class="footer_section">
-		<div class="footer_btns_wrapp">
+		<div class="footer_btns_wrapp" id="boostCoord">
 			<div class="footer_btns">
 				<div>
 					<div class="footer_pill_wrapp">

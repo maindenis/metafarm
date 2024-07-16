@@ -24,11 +24,19 @@ function getLineParams() {
     });
 }
 function getRespParams() {
-    boostCoord = $("#boostCoord").offset().top + $("#boostCoord").outerHeight(true) + 25;
-    footerCoord = $(".footer_section").offset().top;
-    if(boostCoord >= footerCoord) {
+    // if($("#boostCoord").length > 0) {
+    //     boostCoord = $("#boostCoord").offset().top + $("#boostCoord").outerHeight(true) + 25;
+    //     footerCoord = $(".footer_section").offset().top;
+    //     if(boostCoord >= footerCoord) {
+    //         $("body").addClass("resp");
+    //     }
+    // }
+    if($(window).height() <= 1450) {
         $("body").addClass("resp");
+    } else {
+        $("body").removeClass("resp");
     }
+    console.log($(window).height());
 }
 $(window).resize(function() {
     getScreenHeight();

@@ -557,19 +557,19 @@ a:active {
     display: block;
     content: "";
     width: 20px;
-    height: calc(100% - 17.5px);
+    height: calc(100% - 16px);
     background: #fff;
     position: absolute;
-    top: 16px;
-    left: -16px;
-    border-left: 1.5px solid #000;
-    border-bottom: 1.5px solid #000;
+    top: 15px;
+    left: -15px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
     border-radius: 0 0 0 8px;
 }
 
 .white_box {
     display: inline-flex;
-    border: 1.5px solid #000;
+    border: 1px solid #000;
     border-left: 0;
     background: #fff;
     border-radius: 0 8px 8px 0;
@@ -580,33 +580,6 @@ a:active {
     padding: 0 15px;
     position: relative;
 }
-
-/*.white_box > div:nth-child(1) {
-    padding-right: 50px;
-    position: relative;
-    z-index: 2;
-}
-
-.white_box > div:nth-child(1) p {
-    position: relative;
-    padding-left: 17px;
-}
-
-.white_box > div:nth-child(1) p:before {
-    display: block;
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #6A6AB0;
-    position: absolute;
-    top: 8px;
-    left: 0;
-}
-
-.white_box > div:nth-child(2) {
-    width: calc(100% - 103px);
-}*/
 
 .white_box p {
     font-weight: 200;
@@ -638,65 +611,6 @@ a:active {
     border: 1px solid #E94B4B;
     background: #E94B4B;
 }
-
-/*.breadcrumbs {
-    display: flex;
-    margin: 0 -25px;
-    position: relative;
-}
-
-.breadcrumbs:before {
-    display: block;
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #FFAC53;
-    position: absolute;
-    top: 9px;
-    left: -5px;
-}
-
-.breadcrumbs:after {
-    display: block;
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #E94B4B;
-    position: absolute;
-    top: 9px;
-    right: -5px;
-}
-
-.breadcrumbs li {
-    padding: 0 10px;
-    position: relative;
-}
-
-.breadcrumbs li:after {
-    display: block;
-    content: ">";
-    font-family: "SF Pro";
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-    position: absolute;
-    top: 0;
-    right: -7px;
-}
- 
-.breadcrumbs li:last-child:after {
-    display: none;
-}
-
-.breadcrumbs li a {
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
-}*/
 
 .header_border {
     height: 16px;
@@ -1479,6 +1393,9 @@ section .row {
     width: 486px;
     margin: 0 auto;
     position: relative;
+    flex: 1;
+    height: 100%;
+    max-height: 703px;
 }
 
 .time_box {
@@ -1486,9 +1403,10 @@ section .row {
     height: 112px;
     margin: 0 auto;
     position: absolute;
-    top: 169px;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, 0);
+    z-index: 2;
 }
 
 .time_box svg {
@@ -1506,6 +1424,17 @@ section .row {
     color: #000;
     position: relative;
     z-index: 2;
+}
+
+.action_box .glass {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .stay_num {
@@ -1563,7 +1492,7 @@ section .row {
 }
 
 .items_2_sect {
-    padding: 58px 0 120px 0;
+    padding: 58px 0 25px 0;
 }
 
 .items_2_tile h3 {
@@ -2058,17 +1987,16 @@ footer {
 
 .b_footer {
     display: flex;
-    margin: 0 -5px -23px -5px;
 }
 
 .b_footer > div:nth-child(1) {
     width: 50%;
-    padding: 10px 10px 10px 0;
+    padding: 10px 10px 10px 10px;
 }
 
 .b_footer > div:nth-child(2) {
     width: 50%;
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 10px;
     text-align: right;
 }
 
@@ -2295,6 +2223,54 @@ body.fixed {
 
 .resp .content {
     padding-top: 161px;
+}
+
+.resp .b_h {
+    max-height: 185px;
+}
+
+.resp .header_two_cols_a {
+    padding: 15px 0 20px 0;
+}
+
+.resp .stay_num {
+    padding: 23px 0 10px 0;
+}
+
+.resp .bet_h3 {
+    padding: 15px 0 22px 0;
+}
+
+.resp .pill_wrapp {
+    padding: 25px 0 10px 0;
+}
+
+.resp .bet_pill {
+    min-height: 115px;
+}
+
+.resp .item_2 {
+    margin: 15px auto;
+}
+
+.resp .ref_title {
+    padding: 15px 0 15px 0;
+}
+
+.resp .thumb {
+    margin: 15px 0 15px 0;
+}
+
+.resp .header_2 {
+    padding: 15px 0 15px 0;
+}
+
+.resp .boost_header {
+    padding: 13px 0 0 0;
+}
+
+.resp .items_2_sect {
+    padding: 25px 0 5px 0;
 }
 
 /*-- /Resp Styles --*/
