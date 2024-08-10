@@ -36,7 +36,6 @@ function getRespParams() {
     } else {
         $("body").removeClass("resp");
     }
-    console.log($(window).height());
 }
 $(window).resize(function() {
     getScreenHeight();
@@ -52,6 +51,18 @@ $(window).on('load', function(){
     getRespParams();
 });
 $(document).ready(function() {
+
+    function checkWidth() {
+    var windowSize = $(window).width();
+    if (windowSize > 300) {
+document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.47,maximum-scale=0.47");
+    }  else {
+document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0.47");
+    }
+    }
+    checkWidth();
+    $(window).resize(checkWidth); 
+
     getScreenHeight();
     getLineParams();    
     const swiper = new Swiper('.slider', {
