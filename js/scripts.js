@@ -55,9 +55,9 @@ $(document).ready(function() {
     function checkWidth() {
     var windowSize = $(window).width();
     if (windowSize > 300) {
-document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.47,maximum-scale=0.47");
+document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.5,maximum-scale=0.5");
     }  else {
-document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0.47");
+document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0.5");
     }
     }
     checkWidth();
