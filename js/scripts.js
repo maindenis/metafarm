@@ -52,16 +52,16 @@ $(window).on('load', function(){
 });
 $(document).ready(function() {
 
-    function checkWidth() {
-    var windowSize = $(window).width();
-    if (windowSize > 300) {
-document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.4,maximum-scale=0.4");
-    }  else {
-document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0.4");
-    }
-    }
-    checkWidth();
-    $(window).resize(checkWidth); 
+//     function checkWidth() {
+//     var windowSize = $(window).width();
+//     if (windowSize > 900) {
+// document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.5,maximum-scale=0.5");
+//     }  else {
+// document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0");
+//     }
+//     }
+//     checkWidth();
+//     $(window).resize(checkWidth); 
 
     getScreenHeight();
     getLineParams();    
