@@ -291,10 +291,10 @@ a:active {
 /*-------------------------------------------*/
 
 #header {
-    width: 100%;
+    width: calc(100% + 1px);
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -1px;
+    left: -1px;
     z-index: 3;
 }
 
@@ -1900,10 +1900,10 @@ footer {
 }
 
 .footer_section {
-    width: 100%;
+    width: calc(100% + 2px);
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: -2px;
     padding: 22px 0 29px 0;
 }
 
@@ -1919,7 +1919,7 @@ footer {
 }
 
 .footer_btns_wrapp {
-    width: 725px;
+    width: 724px;
     margin: 0 auto;
     position: relative;
 }

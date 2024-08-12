@@ -57,8 +57,8 @@ function getSizeParams() {
             "transform" : "scale("+scale+")",
             "height" : scaleHeight + "px",
         });
-        toptOffset = $("body").offset().top;
-        leftOffset = $("body").offset().left;
+        toptOffset = parseInt($("body").offset().top);
+        leftOffset = parseInt($("body").offset().left);
         $("body").css({
             "top" : -1 * toptOffset + "px",
             "left" : -1 * leftOffset + "px",
