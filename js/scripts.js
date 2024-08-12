@@ -2,8 +2,8 @@ $.noConflict();
 jQuery(document).ready(function($){
 function getScreenHeight() {
     if($(".screen_height").length > 0) {
-        topCoord = $("#topCoord").offset().top
-        screenHeight = $(window).height() - topCoord - parseInt($(".content").css("padding-bottom")) - parseInt($("section").css("padding-top"));
+        topCoord = $("#topCoord").offset().top;
+        screenHeight = $(".content").height() - topCoord - parseInt($(".content").css("padding-bottom"));
         $(".screen_height").css({
             "min-height" : "auto"
         });
@@ -31,28 +31,85 @@ function getRespParams() {
     //         $("body").addClass("resp");
     //     }
     // }
-    if($(window).height() <= 1450) {
-        $("body").addClass("resp");
-    } else {
-        $("body").removeClass("resp");
-    }
-    console.log($(window).height());
+    // if($(window).height() < 1450) {
+    //     $("body").addClass("resp");
+    // } else {
+    //     $("body").removeClass("resp");
+    // }
 }
-$(window).resize(function() {
-    getScreenHeight();
-    getLineParams();
+function getSizeParams() {
+    if($(window).width() < 768) {
+        $("body").css({
+            "transform" : "scale(none)",
+            "left" : "auto",
+            "height" : "auto",
+            "top" : "auto",
+        });
+        $(".content").css({
+            "height" : "auto",
+        });
+        maxWidth = 767;
+        devWidth = $(window).width();
+        devHeight = $(window).height();
+        scale = (devWidth*(100/maxWidth))/100;
+        scaleHeight = devHeight / scale;
+        $("body").css({
+            "transform" : "scale("+scale+")",
+            "height" : scaleHeight + "px",
+        });
+        toptOffset = $("body").offset().top;
+        leftOffset = $("body").offset().left;
+        $("body").css({
+            "top" : -1 * toptOffset + "px",
+            "left" : -1 * leftOffset + "px",
+        });
+        $(".content").css({
+            "height" : scaleHeight + "px"
+        });
+    } else {
+        $("body").css({
+            "transform" : "scale(1)",
+            "left" : "auto",
+            "height" : "auto",
+            "top" : "auto",
+        });
+        $(".content").css({
+            "height" : "100vh"
+        });
+    }
     getRespParams();
+    getScreenHeight();
+}
+
+$(window).resize(function() {
+    getLineParams();
+    // getRespParams();
+    getSizeParams();
+    // getScreenHeight();
 });
 $(document).scroll(function() {
-    getScreenHeight();
+    // getScreenHeight();
     getLineParams();
-    getRespParams();
+    // getRespParams();
 });
 $(window).on('load', function(){
-    getRespParams();
+    // getRespParams();
 });
 $(document).ready(function() {
-    getScreenHeight();
+    getSizeParams();
+
+//     function checkWidth() {
+//     var windowSize = $(window).width();
+//     if (windowSize > 900) {
+// document.querySelector("meta[name=viewport]").setAttribute("content", "width=768, initial-scale=0.5,maximum-scale=0.5");
+//     }  else {
+// document.querySelector("meta[name=viewport]").setAttribute("content", "width=device-width,  initial-scale=0");
+//     }
+//     }
+//     checkWidth();
+//     $(window).resize(checkWidth); 
+
+    // getScreenHeight();
     getLineParams();    
     const swiper = new Swiper('.slider', {
         loop: true,
@@ -144,5 +201,12 @@ $(document).ready(function() {
     }
 
 });
+
+// ;(function () {
+//     var src = '//cdn.jsdelivr.net/npm/eruda';
+//     if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+//     document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+//     document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+// })();
 
 });
