@@ -37,20 +37,65 @@ function getRespParams() {
         $("body").removeClass("resp");
     }
 }
+function getSizeParams() {
+    if($(window).width() < 768) {
+        $("body").css({
+            "transform" : "scale(none)",
+            "left" : "auto",
+            "height" : "auto",
+            "top" : "auto",
+        });
+        $(".content").css({
+            "height" : "auto",
+        });
+        maxWidth = 767;
+        devWidth = $(window).width();
+        devHeight = $(window).height();
+        scale = (devWidth*(100/maxWidth))/100;
+        scaleHeight = devHeight / scale;
+        $("body").css({
+            "transform" : "scale("+scale+")",
+            "height" : scaleHeight + "px",
+        });
+        toptOffset = $("body").offset().top;
+        leftOffset = $("body").offset().left;
+        $("body").css({
+            "top" : -1 * toptOffset + "px",
+            "left" : -1 * leftOffset + "px",
+        });
+        $(".content").css({
+            "height" : scaleHeight + "px"
+        });
+    } else {
+        $("body").css({
+            "transform" : "scale(1)",
+            "left" : "auto",
+            "height" : "auto",
+            "top" : "auto",
+        });
+        $(".content").css({
+            "height" : "100vh"
+        });
+    }
+    getRespParams();
+}
+
 $(window).resize(function() {
     getScreenHeight();
     getLineParams();
-    getRespParams();
+    // getRespParams();
+    getSizeParams();
 });
 $(document).scroll(function() {
     getScreenHeight();
     getLineParams();
-    getRespParams();
+    // getRespParams();
 });
 $(window).on('load', function(){
-    getRespParams();
+    // getRespParams();
 });
 $(document).ready(function() {
+    getSizeParams();
 
 //     function checkWidth() {
 //     var windowSize = $(window).width();
