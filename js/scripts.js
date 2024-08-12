@@ -31,11 +31,11 @@ function getRespParams() {
     //         $("body").addClass("resp");
     //     }
     // }
-    // if($(window).height() < 1450) {
-    //     $("body").addClass("resp");
-    // } else {
-    //     $("body").removeClass("resp");
-    // }
+    if($(window).height() < 1450) {
+        $("body").addClass("resp");
+    } else {
+        $("body").removeClass("resp");
+    }
 }
 function getSizeParams() {
     if($(window).width() < 768) {
