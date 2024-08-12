@@ -13,15 +13,15 @@ function getScreenHeight() {
     }
 }
 function getLineParams() {
-    $(".line").css({
-        "width" : "auto"
-    });
-    leftCoord = $(".step_2:eq(0)").offset().left;
-    rightCoord = $(".step_2:eq(1)").offset().left;
-    lineWidth = rightCoord - leftCoord + 17;
-    $(".line").css({
-        "width" : lineWidth  + "px"
-    });
+    // $(".line").css({
+    //     "width" : "auto"
+    // });
+    // leftCoord = $(".step_2:eq(0)").offset().left;
+    // rightCoord = $(".step_2:eq(1)").offset().left;
+    // lineWidth = rightCoord - leftCoord + 17;
+    // $(".line").css({
+    //     "width" : lineWidth  + "px"
+    // });
 }
 function getRespParams() {
     // if($("#boostCoord").length > 0) {
@@ -65,7 +65,7 @@ function getSizeParams() {
         });
         $(".content").css({
             "height" : scaleHeight + "px"
-        });
+        });        
     } else {
         $("body").css({
             "transform" : "scale(1)",
@@ -79,6 +79,20 @@ function getSizeParams() {
     }
     getRespParams();
     getScreenHeight();
+    // getLineParams();
+    // $(".line").css({
+    //     "width" : "auto"
+    // });
+    // leftCoord = $(".step_2:eq(0)").offset().left;
+    // rightCoord = $(".step_2:eq(1)").offset().left;
+    // lineWidth = rightCoord - leftCoord + 17;
+    // $(".line").css({
+    //     "width" : lineWidth + "px"
+    // });
+    // $(".line").css({
+    //     "width" : 124 + "px"
+    // });
+    // console.log(leftCoord +"  "+ rightCoord);
 }
 
 $(window).resize(function() {
