@@ -2,8 +2,8 @@ $.noConflict();
 jQuery(document).ready(function($){
 function getScreenHeight() {
     if($(".screen_height").length > 0) {
-        topCoord = $("#topCoord").offset().top
-        screenHeight = $(window).height() - topCoord - parseInt($(".content").css("padding-bottom")) - parseInt($("section").css("padding-top"));
+        topCoord = $("#topCoord").offset().top;
+        screenHeight = $(".content").height() - topCoord - parseInt($(".content").css("padding-bottom"));
         $(".screen_height").css({
             "min-height" : "auto"
         });
@@ -31,7 +31,7 @@ function getRespParams() {
     //         $("body").addClass("resp");
     //     }
     // }
-    if($(window).height() <= 1450) {
+    if($(window).height() < 768) {
         $("body").addClass("resp");
     } else {
         $("body").removeClass("resp");
@@ -78,16 +78,17 @@ function getSizeParams() {
         });
     }
     getRespParams();
+    getScreenHeight();
 }
 
 $(window).resize(function() {
-    getScreenHeight();
     getLineParams();
     // getRespParams();
     getSizeParams();
+    // getScreenHeight();
 });
 $(document).scroll(function() {
-    getScreenHeight();
+    // getScreenHeight();
     getLineParams();
     // getRespParams();
 });
@@ -108,7 +109,7 @@ $(document).ready(function() {
 //     checkWidth();
 //     $(window).resize(checkWidth); 
 
-    getScreenHeight();
+    // getScreenHeight();
     getLineParams();    
     const swiper = new Swiper('.slider', {
         loop: true,
@@ -201,11 +202,11 @@ $(document).ready(function() {
 
 });
 
-;(function () {
-    var src = '//cdn.jsdelivr.net/npm/eruda';
-    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
-    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-    document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
-})();
+// ;(function () {
+//     var src = '//cdn.jsdelivr.net/npm/eruda';
+//     if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+//     document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+//     document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+// })();
 
 });
