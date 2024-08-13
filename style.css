@@ -1309,6 +1309,8 @@ section .row {
     padding: 44px 0 40px 0;
     display: flex;
     flex-wrap: wrap;
+    min-width: 100% !important;
+    width: auto !important;
 }
 
 .pill_wrapp > div {
