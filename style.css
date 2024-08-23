@@ -2518,6 +2518,38 @@ footer {
 
 /*-- /Section 1 - Gallery 3 --*/
 
+/*-- Section 1 - Boost 2 --*/
+
+.add_balance {
+    text-align: center;
+}
+
+.add_balance_pill {
+    display: block;
+    width: 311px;
+    height: 113px;
+    margin: 28px auto -8px auto;
+    padding: 39px 0 10px 28px;
+    background-image: url(img/add_balance.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    font-family: 'SF Pro';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+}
+
+.add_balance_pill svg {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+}
+
+/*-- /Section 1 - Boost 2 --*/
+
 /*-- Resp Styles --*/
 
 .resp .header_site {

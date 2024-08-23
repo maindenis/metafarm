@@ -15,3 +15,4 @@
 # https://maindenis.github.io/metafarm/success.html
 # https://maindenis.github.io/metafarm/gallery_2.html
 # https://maindenis.github.io/metafarm/gallery_3.html
+# https://maindenis.github.io/metafarm/boost_2.html
