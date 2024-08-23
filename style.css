@@ -2550,6 +2550,65 @@ footer {
 
 /*-- /Section 1 - Boost 2 --*/
 
+/*-- Section 1 - Gallery 4 --*/
+
+.success_card .card_img_box {
+    background: #75539E;
+}
+
+.success_card .card_descript {
+    text-align: center;
+}
+
+.card_time {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.card_time img {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -41px;
+    z-index: 2;
+}
+
+.card_time p {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px 5px 54px;
+    width: 220px;
+    height: 60px;
+    background: #5F5FA6;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-weight: 274;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFF;
+}
+
+.card_time {
+    margin: 20px 0 20px 0;
+}
+
+.card_time_descript {
+    padding: 28px 0 20px 0;
+    text-align: center;
+}
+
+.card_time_descript p {
+    font-weight: 274;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFF;
+}
+
+/*-- /Section 1 - Gallery 4 --*/
+
 /*-- Resp Styles --*/
 
 .resp .header_site {
