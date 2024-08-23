@@ -2414,6 +2414,53 @@ footer {
 
 /*-- /Section 1 - Fail --*/
 
+/*-- Section 1 - Success --*/
+
+.succed_card .card_img_box {
+    background: #75539E;
+    border-radius: 40px;
+    height: 456px;
+    border-bottom: 1px solid #000;
+}
+
+.succed_card  .card_inner {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+}
+
+.btns_wrapp_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.btns_wrapp_2 > div {
+    padding: 5px 27px;
+}
+
+.pill_small {
+    min-height: 100px;
+    padding: 9px 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.pill_small.green_pill {
+    color: #fff;
+}
+
+.btns_wrapp_2 .blue_pill {
+    min-width: 140px;
+}
+
+.btns_wrapp_2 .green_pill {
+    min-width: 320px;
+}
+
+/*-- /Section 1 - Success --*/
+
 /*-- Resp Styles --*/
 
 .resp .header_site {
