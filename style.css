@@ -120,6 +120,33 @@ body {
     min-height: 100vh;
 }
 
+.wrapper {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .1s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .1s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .1s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .1s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+}
+
+.wrapper.visible {
+    opacity: 1;
+}
+
 header {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
@@ -2228,6 +2255,164 @@ footer {
 }
 
 /*-- /Section 1 - F 5 --*/
+
+/*-- Section 1 - Up 1 2 --*/
+
+.item_3 {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+    margin: 28px 0;
+    padding: 10px;
+    border-radius: 17px;
+}
+
+.item_3 > div:nth-child(1) {
+    width: 130px;
+}
+
+.item_3 > div:nth-child(2) {
+    width: calc(100% - 270px);
+}
+
+.item_3 > div:nth-child(3) {
+    width: 140px;
+}
+
+.item_3_icon {
+    width: 107px;
+    height: 107px;
+    background: #FF5252;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item_3_icon img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item_3_icon.red {
+    background: #FF5252;
+}
+
+.item_3_icon.blue {
+    background: #6060A8;
+}
+
+.item_3 > div:nth-child(2) p {
+    font-weight: 274;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFF;
+}
+
+.users_thumb {
+    display: flex;
+}
+
+.users_thumb img {
+    margin-right: 10px;
+}
+
+.users_thumb p {
+    font-weight: 700;
+    font-size: 46.03px;
+    line-height: 55px;
+    color: #FFF;
+}
+
+/*-- /Section 1 - Up 1 2 --*/
+
+/*-- Section 1 - Fail --*/
+
+.fail_center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1q;
+}
+
+.fail_center > div {
+    width: 100%;
+}
+
+.fail_quote {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 180px;
+    background-image: url(img/quote.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    margin: 18px auto;
+    padding-bottom: 25px;
+}
+
+.fail_quote p {
+    font-weight: 274;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: #000;
+}
+
+.fail_icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.fail_title {
+     padding: 48px 0 34px 0;
+    text-align: center;
+}
+
+.fail_title h3 {
+    font-weight: 274;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFF;
+}
+
+.fail_descript {
+    text-align: center;
+}
+
+.fail_descript p {
+    padding: 8px 0;
+    font-weight: 274;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFF;
+}
+
+.fail_pill {
+    padding: 51px 0 0 0;
+    text-align: center;
+}
+
+.fail_pill a,
+.fail_pill button {
+    display: inline-flex;
+    min-width: 320px;
+    min-height: 100px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+/*-- /Section 1 - Fail --*/
 
 /*-- Resp Styles --*/
 
