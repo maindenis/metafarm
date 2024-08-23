@@ -95,6 +95,7 @@ $(document).scroll(function() {
 });
 $(window).on('load', function(){
     // getRespParams();
+    $(".wrapper").addClass("visible");
 });
 $(document).ready(function() {
     getSizeParams();  
