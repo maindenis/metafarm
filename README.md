@@ -13,3 +13,5 @@
 # https://maindenis.github.io/metafarm/Uo_1_2.html
 # https://maindenis.github.io/metafarm/fail.html
 # https://maindenis.github.io/metafarm/success.html
+# https://maindenis.github.io/metafarm/gallery_2.html
+# https://maindenis.github.io/metafarm/gallery_3.html

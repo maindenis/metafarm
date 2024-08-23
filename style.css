@@ -2462,6 +2462,62 @@ footer {
 
 /*-- /Section 1 - Success --*/
 
+/*-- Section 1 - Gallery 2 --*/
+
+.btn_wrapp_3 {
+    text-align: center;
+}
+
+.active_pill {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 100px;
+    padding: 5px 75px;
+    background: #5F4282;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-family: 'SF Pro';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFF;
+}
+
+.active_pill:before {
+    display: block;
+    content: "";
+    width: 51px;
+    height: 51px;
+    background-color: rgba(0, 0, 0, .1);
+    background-image: url(img/ch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 18px;
+}
+
+.d_count {
+    padding-bottom: 36px;
+}
+
+/*-- /Section 1 - Gallery 2 --*/
+
+/*-- Section 1 - Gallery 3 --*/
+
+.active_width {
+    display: inline-flex;
+    min-width: 400px;
+}
+
+/*-- /Section 1 - Gallery 3 --*/
+
 /*-- Resp Styles --*/
 
 .resp .header_site {
